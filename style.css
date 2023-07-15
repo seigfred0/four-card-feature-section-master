@@ -1,0 +1,33 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    font-size: 15px
+}
+
+
+.title {
+    text-align: center;
+    padding: 4em 1em;
+    
+}
+
+.title-main, span {
+    font-size: 1.8rem;
+    font-weight: 200;
+}
+
+.title-main span {
+    font-weight: 600;
+}
+
+.title-sub {
+    margin-top: 1.5em;
+    color: hsl(229, 6%, 66%);
+}
+
