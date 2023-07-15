@@ -1,5 +1,5 @@
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
 
 
 * {
@@ -7,14 +7,27 @@
     margin: 0;
     padding: 0; 
     box-sizing: border-box;
-    font-size: 15px
+    font-size: 15px;
+    background-color: hsl(0, 0%, 95%);
+}
+
+h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5em;
+}
+
+p {
+    color: hsl(229, 6%, 66%);
+    margin-bottom: 1em;
 }
 
 
 .title {
     text-align: center;
     padding: 4em 1em;
-    
+    max-width: 450px;
+
+    margin: auto auto;
 }
 
 .title-main, span {
@@ -28,6 +41,60 @@
 
 .title-sub {
     margin-top: 1.5em;
-    color: hsl(229, 6%, 66%);
 }
 
+.cards {
+    padding: 3em 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.double-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.cards ul {
+    list-style: none;
+    display: flex;
+
+}
+
+.cards li {
+    border-top: 4px solid hsl(180, 62%, 55%);
+    box-shadow: 2px 5px 9px 7px rgba(0, 0, 0, 0.08);
+    padding: 1.5em 2em;
+    border-radius: 10px;
+
+    margin: 0 auto;
+    /* max-width: 500px; */
+    max-width: 400px;
+    width: 100%;
+}
+
+.cards-container .red {
+    border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.cards-container .orange {
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.cards-container .blue {
+    border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+.cards-container__content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.cards-container__content img {
+    height: 60px;
+    width: 60px;
+    object-fit: contain;
+    align-self: flex-end;
+}
